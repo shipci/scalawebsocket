@@ -232,7 +232,7 @@ class WebSocketSpec extends BaseTest with Logging {
 
   it should "not allow non ws/wss schemes connection" in {
     intercept[IllegalArgumentException] {
-      WebSocket().open("https://localhost")
+      WebSocket().open("https://www")
     }
   }
 
