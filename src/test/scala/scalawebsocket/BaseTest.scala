@@ -68,7 +68,8 @@ abstract class BaseTest extends Server with FlatSpec with BeforeAndAfterAll with
       true
     }
 
-    private final val _webSocketFactory: WebSocketFactory = new WebSocketFactory(this, 32 * 1024)
+    private final val _webSocketFactory: WebSocketFactory = new WebSocketFactory(this, 30 * 1024)  
+    
   }
 
   protected def findFreePort: Int = {
